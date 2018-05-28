@@ -1,0 +1,23 @@
+#生产配置
+spring:
+  datasource:
+    name: srm
+    url: jdbc:oracle:thin:@120.92.190.195:11521:orcl
+    username: SRM_DEMO3
+    password: SRM_DEMO3
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    filters: stat
+    maxActive: 50
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20

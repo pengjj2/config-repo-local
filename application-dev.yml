@@ -2,7 +2,7 @@
 spring:
   datasource:
     name: srm
-    url: jdbc:mysql://120.92.190.195:13306/nfsrm?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=round&transformedBitIsBoolean=true 
+    url: jdbc:mysql://119.3.25.215:3306/nfsrm?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=round&transformedBitIsBoolean=true 
     username: nfsrm
     password: nfsrm
     driver-class-name: com.mysql.jdbc.Driver
